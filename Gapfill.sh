@@ -39,9 +39,18 @@ th=1
 ######
 # Merge
 ######
-cat */*updated_scaff_infos > merged.updated_scaff_infos
 # chrs.contigs.fa: break all N of chr and to every contig,
 # exist in output of TGS-GapCloser, named msu7_${sample}_ass_contigs_gapfill.contig
 mv msu7_${sample}_ass_contigs_gapfill.contig ref/msu7/chrs.contigs.fa
-cat ref/msu7/chrs.contigs.fa
-python gapfill.py merged.updated_scaff_infos min > msu7.chrs.min.fa
+
+# corrected reads
+cat *_corr_reads_gapfill/*updated_scaff_infos > merged_corr_reads.updated_scaff_infos
+python gapfill.py merged_corr_reads.updated_scaff_infos ref/msu7/chrs.contigs.fa min > msu7.chrs.corr_reads_min.fa
+
+# assembled contigs
+cat *_ass_contigs_gapfill/*updated_scaff_infos > merged_ass_contigs.updated_scaff_infos
+python gapfill.py merged_ass_contigs.updated_scaff_infos ref/msu7/chrs.contigs.fa min > msu7.chrs.ass_contigs_min.fa
+
+# total
+cat */*updated_scaff_infos > merged.updated_scaff_infos
+python gapfill.py merged.updated_scaff_infos ref/msu7/chrs.contigs.fa min > msu7.chrs.min.fa
