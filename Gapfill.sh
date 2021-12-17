@@ -16,7 +16,7 @@ th=1
   --reads ${corr_reads} \
   --output msu7_${sample}_corr_reads_gapfill \
   --tgstype ont \
-  --min_idy 0.3 \
+  --min_idy 0.9 \
   --min_match 300 \
   --ne \
   --thread ${th} >pipe.log 2>pipe.err
