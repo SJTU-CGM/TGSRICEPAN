@@ -2,7 +2,7 @@ TGSRICEPAN
 -
 
 # Introduction
-Rice is one of the most important crops for human. The third generation sequencing help we assemble more high-quality genomes and construct more complete pan-genomes. Here are codes of the article "The third generation sequencing of 111 rice genomes reveals a huge size of novel genome sequences in the rice pan-genome".
+Rice is one of the most important crops for human. The third generation sequencing help we assemble more high-quality genomes and construct more complete pan-genomes. Here are codes of the article "The third generation sequencing of 111 rice genomes reveals a giant size of novel genome sequences in the rice pan-genome".
 
 # Codes
 The main pipelines are as following and the main self-writen scripts are in "scripts" directory.
