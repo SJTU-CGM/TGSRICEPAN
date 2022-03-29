@@ -2,7 +2,7 @@ TGSRICEPAN
 -
 
 # Introduction
-Rice is one of the most important crops for human. The third-generation sequencing (TGS, also called long-read sequencing, LRS) helps us assemble more high-quality genomes and construct more complete pan-genomes. Here are codes and result data of the article "**Long-read sequencing of 111 rice genomes reveals significantly larger pan-genomes**".
+Rice is one of the most important crops for human. The third-generation sequencing (TGS, also called long-read sequencing, LRS) helps us assemble more high-quality genomes and construct more complete pan-genomes. Here are codes of the article "**Long-read sequencing of 111 rice genomes reveals significantly larger pan-genomes**".
 
 # Codes
 The main pipelines are as following and the main self-writen scripts are in "scripts" directory.
